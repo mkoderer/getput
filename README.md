@@ -1,21 +1,25 @@
 This is the getput benchmarking tool suite.
 
-Dependencies:
+# Dependencies:
 
 python-swiftclient
 
-Installation:
+# Installation:
 
 git clone https://github.com/markseger/getput.git
 <BR>cd getput
 <BR>sudo python setup.py install
 
-Documentation:
+# Start getput as docker container
+```
+  docker run --env-file os.env dreamrocker/getput -n1 -tp,d -c1 -on -s4k
+```
+# Documentation:
 
 /usr/share/doc/gptools/getting-started.txt
 <BR>/usr/share/doc/gptools/Introduction.pdf
 
-Notes:
+# Notes:
 
 Version 2 of the swift client fixes the problem with longer PUT latencies
 for small objects BUT you need to make sure you have the latest version
